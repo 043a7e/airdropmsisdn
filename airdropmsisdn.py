@@ -15,5 +15,6 @@ for areacode in areacodelist:
         endhashcheck = targettest.hexdigest() [-5:]
         if starthashcheck == targetstart.lower() and endhashcheck == targetend.lower():
             print('Your target\'s phone number is possibly:', targetphone)
+            break
         else:
             line = int(line) + 1
