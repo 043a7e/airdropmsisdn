@@ -18,3 +18,6 @@ for areacode in areacodelist:
             break
         else:
             line = int(line) + 1
+    while int(line) == 10000000:
+        print('Target phone number not found in this area code set.  Please try another area code set.')
+        break
