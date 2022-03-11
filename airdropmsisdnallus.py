@@ -44,12 +44,11 @@ for areacode in areacodelist:
             print(targetphone + ' matches hash fragments.  Still checking...')
         line = int(line) + 1
     while int(line) == 10000000:
-        if not phonematch:
-            print('Target phone number not found in this area code set.  Target phone may use another country code.')
-            break
-        else:
-            break
+        break
+            
 if phonematch:
     print('Your target\'s phone number may be:')
     for match in phonematch:
         print(match)
+else:
+    print('Target phone number not found in this area code set.  Target phone may use another country code.')
