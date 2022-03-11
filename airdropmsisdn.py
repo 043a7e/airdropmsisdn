@@ -23,7 +23,8 @@ for areacode in areacodelist:
             break
         else:
             break
-
-print('Your target\'s phone number may be:')
-for match in phonematch:
-    print(match)
+            
+if phonematch:
+    print('Your target\'s phone number may be:')
+    for match in phonematch:
+        print(match)
